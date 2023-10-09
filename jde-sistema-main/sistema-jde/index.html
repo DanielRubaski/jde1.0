@@ -1,0 +1,33 @@
+<!--Página de login-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="ladoEsquerdo">
+        <img id="imagem-do-logo" src="assets/logojde.png" alt="Imagem da logo">
+        <h1>Bem vindo de</h1>
+        <h1>volta!</h1>
+        <form name="form1">
+            <input name="usuario" class="input-login" type="text" placeholder="Username">
+            <input name="senha" class="input-login" type="password" placeholder="Password">
+            <div id="checkbox-link">
+                <label><input type="checkbox" id="checkbox">Lembrar senha</label>
+                <a href="#" target="_blank">Esqueceu sua senha?</a>
+            </div>
+            <input id="botao-entrar" type="submit" value="Entrar >" onclick="validar()">
+            <a id="criar-conta" href="tela-de-cadastro.html">Criar nova conta</a><br>
+            <a href="home.html">Home</a>
+        </form>
+    </div>
+    <div id="lado-direito">
+        <div id="parte-azul" alt="Imagem ilustrativa de um quadrado azul na tela de login."></div>
+        <img id="telefone" src="assets/telefone.png" alt="Imagem ilustrativa de um telefone na página de login.">
+    </div>
+    <script src="validacao-formulario.js"> </script>
+</body>
+</html>

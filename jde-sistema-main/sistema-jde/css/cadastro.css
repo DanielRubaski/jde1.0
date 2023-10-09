@@ -1,0 +1,134 @@
+/* Estilização da página de cadastro*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Krona+One&family=League+Spartan:wght@600&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-da-logo { 
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+    height: 100vh;
+    width: 40%;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.imagemLogo {
+    width: 300px;
+}
+
+.cadastro {
+    background-color: #4495FA;
+    font-family: 'DM Sans', sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    width: 60%;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#formulario {
+    padding: 50px;
+}
+
+.campo-data {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+}
+
+input {
+    background-color: #ECECEC;
+    border: #ECECEC;
+    padding: 4px;
+    border-radius: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+input[type="submit"].botao-cadastrar:hover {
+    background-color: #ECECEC;
+    cursor: pointer;
+}
+
+.botao-cadastrar {  
+    background-color: #fff;
+    color:#4495FA;
+    border: #4495FA;
+    width: 200px;
+    height: 40px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 830px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;  
+    }
+
+    .div-da-logo {
+        font-family: 'League Spartan', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;  
+        font-size: small;
+        height: 20vh;
+        width: 100vh;
+    }
+    
+    .imagemLogo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cadastro {
+        background-color: #fff;
+    }
+
+    .campo-data {
+        width: 250px;
+        height: 40px;
+    }
+
+    input {
+        width: 250px;
+        height: 40px;
+    }
+
+    .botao-cadastrar {  
+        background-color: #4495FA;
+        color: #fff;
+    }
+
+    input[type="submit"].botao-cadastrar:hover {
+        background-color: #1E90FF;
+        cursor: pointer;
+    }
+    
+}
